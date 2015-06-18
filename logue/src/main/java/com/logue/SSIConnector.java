@@ -6,7 +6,7 @@
 
 package com.logue;
 
-
+import android.util.Log;
 
 import org.apache.http.conn.util.InetAddressUtils;
 

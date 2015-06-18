@@ -111,14 +111,13 @@ public class FeedbackManager extends Thread {
                 i.parseEvent(event);
 
                 Drawable icon_behaviour = i.getIcon();
-                float quality = i.getQuality(false);
-                Drawable icon_quality = getQualityIcon(quality);
+                Drawable icon_quality = getQualityIcon(i.getQuality(false));
 
                 _activity.setIcon(icon_behaviour,       //feedback class icon
                         icon_quality,                   //quality icon (appropriateness)
                         id,                             //id of feedback class defines position on screen
-                        _conf.getOptionI("timeout"),
-                        quality);   //timeout of feedback is globally defined
+                        _conf.getOptionI("timeout"));   //timeout of feedback is globally defined
+
                 break; //one event can be processed by only one class
             }
             id++;
@@ -148,7 +147,7 @@ public class FeedbackManager extends Thread {
                 _qualityIcons.add(pos);
 
                 //init gui
-                _activity.setIcon(c.getIcon(), getQualityIcon(1), _classes.size() - 1, _conf.getOptionI("timeout"),-1);
+                _activity.setIcon(c.getIcon(), getQualityIcon(1), _classes.size() - 1, _conf.getOptionI("timeout"));
             }
             else if(parser.getEventType() == XmlPullParser.END_TAG && parser.getName().equalsIgnoreCase("classes"))
                 break; //jump out once we reach end tag for classes

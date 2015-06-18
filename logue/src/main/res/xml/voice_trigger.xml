@@ -1,0 +1,8 @@
+<!--
+  ~ Copyright (c) 2015.
+  ~ author: Ionut Damian <damian@informatik.uni-augsburg.de>
+  ~ created: 2015/02/27
+  -->
+
+<!-- For more information about voice trigger, check out: https://developers.google.com/glass/develop/gdk/starting-glassware -->
+<trigger keyword="@string/app_name" />

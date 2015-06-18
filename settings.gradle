@@ -1,0 +1,7 @@
+/*
+ * Copyright (c) 2014.
+ * author: Ionut Damian <damian@informatik.uni-augsburg.de>
+ * created: 2014/12/02
+ */
+
+include ':logue', ':ssj-debug'

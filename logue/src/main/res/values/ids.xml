@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ author: Ionut Damian <damian@informatik.uni-augsburg.de>
+  ~ created: 2015/05/06
+  -->
+
+<resources>
+    <item name="lock" type="id"/>
+    <item name="visible" type="id"/>
+    <item name="anim" type="id"/>
+</resources>

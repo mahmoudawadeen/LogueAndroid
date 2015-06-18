@@ -1,0 +1,70 @@
+<!--
+  ~ Copyright (c) 2014.
+  ~ author: Ionut Damian <damian@informatik.uni-augsburg.de>
+  ~ created: 2014/12/02
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity"
+    android:keepScreenOn="true">
+
+    <ImageView
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:id="@+id/icon_fb0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="false" />
+
+    <ImageView
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:id="@+id/icon_fb1"
+        android:layout_alignTop="@+id/icon_fb0"
+        android:layout_toRightOf="@+id/icon_fb0" />
+
+    <ImageView
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:id="@+id/icon_fb2"
+        android:layout_alignTop="@+id/icon_fb1"
+        android:layout_toRightOf="@+id/icon_fb1" />
+
+    <ImageView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/icon_q0"
+        android:layout_below="@+id/icon_fb0"
+        android:layout_alignLeft="@+id/icon_fb0"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/icon_q1"
+        android:layout_alignLeft="@+id/icon_fb1"
+        android:layout_below="@+id/icon_fb1"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/icon_q2"
+        android:layout_alignLeft="@+id/icon_fb2"
+        android:layout_below="@+id/icon_fb2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="debug"
+        android:textSize="12sp"
+        android:id="@+id/debug"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

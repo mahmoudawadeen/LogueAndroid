@@ -4,7 +4,7 @@
   ~ created: 2014/12/02
   -->
 
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,25 +14,28 @@
     android:keepScreenOn="true">
 
     <ImageView
-        android:layout_width="130sp"
-        android:layout_height="130sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/icon_fb0"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="false" />
+        android:layout_alignParentLeft="false"
+        android:layout_weight="1" />
 
     <ImageView
-        android:layout_width="130sp"
-        android:layout_height="130sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/icon_fb1"
         android:layout_alignTop="@+id/icon_fb0"
-        android:layout_toRightOf="@+id/icon_fb0" />
+        android:layout_toRightOf="@+id/icon_fb0"
+        android:layout_weight="1" />
 
     <ImageView
-        android:layout_width="130sp"
-        android:layout_height="130sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/icon_fb2"
         android:layout_alignTop="@+id/icon_fb1"
-        android:layout_toRightOf="@+id/icon_fb1" />
+        android:layout_toRightOf="@+id/icon_fb1"
+        android:layout_weight="1" />
 
     <ImageView
         android:layout_width="70sp"
@@ -40,7 +43,8 @@
         android:id="@+id/icon_q0"
         android:layout_below="@+id/icon_fb0"
         android:layout_alignLeft="@+id/icon_fb0"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="70sp"
@@ -48,7 +52,8 @@
         android:id="@+id/icon_q1"
         android:layout_alignLeft="@+id/icon_fb1"
         android:layout_below="@+id/icon_fb1"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
 
     <ImageView
         android:layout_width="70sp"
@@ -56,7 +61,8 @@
         android:id="@+id/icon_q2"
         android:layout_alignLeft="@+id/icon_fb2"
         android:layout_below="@+id/icon_fb2"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -65,6 +71,8 @@
         android:textSize="12sp"
         android:id="@+id/debug"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom"
+        android:visibility="visible" />
 
-</RelativeLayout>
+</LinearLayout>

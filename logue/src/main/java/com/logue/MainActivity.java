@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 
     private final int GLASS_PORT = 34106;
 
-    private final String SSI_IP = "137.250.171.175";
+    private final String SSI_IP = "137.250.171.235";
     private final int SSI_PORT = 34300;
 
     private Config _conf;
@@ -194,6 +194,7 @@ public class MainActivity extends Activity {
             public void run() {
                 ImageView text = (ImageView)findViewById(id);
                 text.setImageDrawable(img);
+                Log.d("debug","shit");
             }
         });
     }

@@ -1,6 +1,6 @@
 <logue>
 	<options>
-        <option name="ip">192.168.0.104</option>
+        <option name="ip">137.250.171.235</option>
         <option name="port">34300</option>
         <option name="sideBySide">0</option>
         <option name="monitor">0</option>
